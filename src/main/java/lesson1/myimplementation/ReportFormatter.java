@@ -2,7 +2,7 @@ package lesson1.myimplementation;
 
 public class ReportFormatter {
 
-    String formatType = "";
+    String formatType;
 
     private String convertObjectToXML(Object object) {
         String displayedMessage = "Here the XML report of your object";
@@ -19,13 +19,11 @@ public class ReportFormatter {
     public String getFormattedValue(Object object) {
         switch (formatType) {
             case "XML":
-                this.convertObjectToXML(object);
-                break;
+                return this.convertObjectToXML(object);
             case "CSV":
-                this.convertObjectToCSV(object);
-                break;
+                return this.convertObjectToCSV(object);
             default:
-                this.convertObjectToCSV(object);
+                return this.convertObjectToCSV(object);
         }
     };
 }
