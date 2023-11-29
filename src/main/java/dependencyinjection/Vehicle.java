@@ -2,10 +2,14 @@ package dependencyinjection;
 
 public class Vehicle {
 
-    Engine racingEngine = new LargeEngine(500);
+    Engine myEngine;
+
+    public Vehicle(Engine anEngine) {
+        myEngine = anEngine;
+    }
 
     public void crankIgnition() {
-        racingEngine.startEngine();
+        myEngine.startEngine();
         System.out.println("Vehicle is running");
     }
 }
