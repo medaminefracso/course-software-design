@@ -1,6 +1,6 @@
 package liskovsubprinciple;
 
-public class ScienceTeacher extends Teacher {
+public class ScienceTeacher extends SchoolStaff implements CourseInstructor {
 
     @Override
     public void teach() {

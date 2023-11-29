@@ -1,9 +1,5 @@
 package liskovsubprinciple;
 
-public class SubstituteTeacher extends Teacher {
+public class SubstituteTeacher extends SchoolStaff {
 
-    @Override
-    public void teach() {
-        // do nothing...
-    }
 }
