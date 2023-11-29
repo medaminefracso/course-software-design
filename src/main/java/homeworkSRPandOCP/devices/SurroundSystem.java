@@ -1,6 +1,8 @@
-package homeworkSRPandOCP;
+package homeworkSRPandOCP.devices;
 
-public class SurroundSystem extends Device {
+import homeworkSRPandOCP.devices.Device;
+
+public class SurroundSystem implements Device {
 
     @Override
     public void turnOn() {

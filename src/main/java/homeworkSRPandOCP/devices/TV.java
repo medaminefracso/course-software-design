@@ -1,6 +1,8 @@
-package homeworkSRPandOCP;
+package homeworkSRPandOCP.devices;
 
-public class TVDevice extends Device {
+import homeworkSRPandOCP.devices.Device;
+
+public class TV implements Device {
     @Override
     public void turnOn() {
         System.out.println("Turn on TV");

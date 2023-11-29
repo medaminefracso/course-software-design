@@ -1,6 +1,6 @@
-package homeworkSRPandOCP;
+package homeworkSRPandOCP.devices;
 
-public class ProjectorDevice extends Device {
+public class Projector implements Device {
     @Override
     public void turnOn() {
         System.out.println("Turn on Projector Device");

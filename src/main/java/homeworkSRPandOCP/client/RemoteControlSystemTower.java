@@ -1,12 +1,17 @@
-package homeworkSRPandOCP;
+package homeworkSRPandOCP.client;
+
+import homeworkSRPandOCP.RemoteControlSystem;
+import homeworkSRPandOCP.devices.Projector;
+import homeworkSRPandOCP.devices.SurroundSystem;
+import homeworkSRPandOCP.devices.TV;
 
 public class RemoteControlSystemTower {
     public static void main(String[] args) {
-        RemoteControlSystem remoteControlSystem = new RemoteControlSystem();
+        RemoteControlSystem remoteControlSystem = RemoteControlSystem.getInstance();
 
-        ProjectorDevice projectorDevice = new ProjectorDevice();
+        Projector projectorDevice = new Projector();
         SurroundSystem surroundSystem = new SurroundSystem();
-        TVDevice tv = new TVDevice();
+        TV tv = new TV();
 
         remoteControlSystem.turnOn(tv);
 
