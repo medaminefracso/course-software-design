@@ -6,4 +6,18 @@ public class Doctor extends Employee {
         super(id, name, department, working);
         System.out.println("Doctor in action...");
     }
+
+    @Override
+    public void performDuties() {
+        prescribeMedicine();
+        diagnosePatients();
+    }
+
+    private void prescribeMedicine() {
+        System.out.println("Prescribe Medicine");
+    }
+
+    private void diagnosePatients() {
+        System.out.println("Diagnosing Patient");
+    }
 }
