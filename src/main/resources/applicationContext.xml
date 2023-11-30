@@ -7,12 +7,12 @@
 
 
     <!-- Definition for textEditor bean -->
-    <bean id="smallEngine" class="dependencyinjection.parts.SmallEngine">
-        <constructor-arg value="150"/>
+    <bean id="largeEngine" class="dependencyinjection.parts.LargeEngine">
+        <constructor-arg value="400"/>
     </bean>
 
     <bean id="mrBeansCar" class="dependencyinjection.vehicles.Vehicle">
-        <constructor-arg ref="smallEngine"/>
+        <constructor-arg ref="largeEngine"/>
     </bean>
 
 <!--    <bean id="vehicle" class="vehicles.Vehicle">-->
