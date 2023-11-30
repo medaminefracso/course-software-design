@@ -1,4 +1,4 @@
-package dependencyinjection;
+package dependencyinjection.parts;
 
 public interface Engine {
 

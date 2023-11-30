@@ -1,4 +1,4 @@
-package dependencyinjection;
+package dependencyinjection.parts;
 
 public class SmallEngine implements Engine {
 
@@ -8,7 +8,6 @@ public class SmallEngine implements Engine {
         this.horsePower = horsePower;
     }
 
-    @Override
     public void startEngine() {
         System.out.println("started small " + horsePower + "hp engine");
     }

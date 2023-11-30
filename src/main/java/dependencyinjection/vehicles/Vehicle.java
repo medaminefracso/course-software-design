@@ -1,8 +1,10 @@
-package dependencyinjection;
+package dependencyinjection.vehicles;
+
+import dependencyinjection.parts.Engine;
 
 public class Vehicle {
 
-    Engine myEngine;
+    private Engine myEngine;
 
     public Vehicle(Engine anEngine) {
         myEngine = anEngine;
