@@ -49,4 +49,20 @@ public class EmployeeManagementSystem implements ISubject {
         employees.add(employee);
         notifyObservers();
     }
+
+    public void modifyEmployeeName(int id, String newName) {
+        boolean notify = false;
+
+        for(Employee emp : employees) {
+            if(id == emp.employeeID) {
+                emp.setName(newName);
+                this.employee = emp;
+                this.msg = "Employee name has been modified";
+                notify = true;
+            }
+        }
+        if(notify) {
+            notifyObservers();
+        }
+    }
 }
