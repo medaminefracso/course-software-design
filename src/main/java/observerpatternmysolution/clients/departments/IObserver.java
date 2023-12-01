@@ -1,4 +1,4 @@
-package observerpatternmysolution.departments;
+package observerpatternmysolution.clients.departments;
 
 public abstract class IObserver {
 

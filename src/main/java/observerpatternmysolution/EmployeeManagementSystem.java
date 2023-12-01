@@ -1,6 +1,6 @@
 package observerpatternmysolution;
 
-import observerpatternmysolution.departments.IObserver;
+import observerpatternmysolution.clients.departments.IObserver;
 import observerpatternmysolution.domain.Employee;
 
 import java.util.ArrayList;

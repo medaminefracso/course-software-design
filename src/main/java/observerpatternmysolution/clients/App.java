@@ -1,9 +1,9 @@
 package observerpatternmysolution.clients;
 
 import observerpatternmysolution.EmployeeManagementSystem;
-import observerpatternmysolution.departments.HRDepartment;
-import observerpatternmysolution.departments.IObserver;
-import observerpatternmysolution.departments.PayrollDepartment;
+import observerpatternmysolution.clients.departments.HRDepartment;
+import observerpatternmysolution.clients.departments.IObserver;
+import observerpatternmysolution.clients.departments.PayrollDepartment;
 
 public class App {
 
