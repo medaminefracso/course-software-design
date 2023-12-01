@@ -10,19 +10,6 @@ public class User {
     private String address; // Optional
 
     private User(Builder builder) {
-
-    }
-
-    public User(String username, String emailAddress) {
-        this.userName = username;
-        this.emailAddress = emailAddress;
-    }
-
-    public User(String username, String emailAddress, String firstName, String lastName) {
-        this.userName = username;
-        this.emailAddress = emailAddress;
-        this.firstName = firstName;
-        this.lastName = lastName;
     }
 
     @Override
