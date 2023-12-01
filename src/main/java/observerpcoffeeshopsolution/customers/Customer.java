@@ -24,7 +24,7 @@ public class Customer implements WaitingCustomer {
     }
 
     private void exitStore() {
-        System.out.println(name + ": Thank you, I've recieved my "
+        System.out.println(name + ": Thank you, I've received my "
                 + drinkOrdered + " and leaving the store now...");
     }
 }
