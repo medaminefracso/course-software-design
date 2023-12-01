@@ -4,19 +4,20 @@ import factoryDP.vehicles.Car;
 import factoryDP.vehicles.ElectricCar;
 import factoryDP.vehicles.Truck;
 import factoryDP.vehicles.Vehicle;
+import factoryDP.vehicles.VehicleType;
 
 public class VehicleFactory {
 
-    public Vehicle getVehicle(String vehicleType) {
+    public Vehicle getVehicle(VehicleType vehicleType) {
 
-        if(vehicleType.equalsIgnoreCase("TRUCK")) {
-            return new Truck();
-        } else if(vehicleType.equalsIgnoreCase("CAR")) {
-            return new Car();
-        } else if(vehicleType.equalsIgnoreCase("ELECTRIC")) {
-            return new ElectricCar();
-        }
+//        if(vehicleType == VehicleType.TRUCK) {
+//            return new Truck();
+//        } else if(vehicleType == VehicleType.CAR) {
+//            return new Car();
+//        } else if(vehicleType == VehicleType.ELECTRIC) {
+//            return new ElectricCar();
+//        }
 
-        return null;
+        return vehicleType.getVehicle();
     }
 }
