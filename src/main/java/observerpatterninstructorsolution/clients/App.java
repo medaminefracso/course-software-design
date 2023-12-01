@@ -20,9 +20,9 @@ public class App {
         ems.registerObserver(payroll);
         ems.registerObserver(hrSystem);
 
-//        Employee bob = new Employee("Bob", new Date(), 35000, true);
-//        ems.hireNewEmployee(bob);
+        Employee bob = new Employee("Bob", new Date(), 35000, true);
+        ems.hireNewEmployee(bob);
 
-        ems.modifyEmployeeName(5, "Imtiaz");
+        ems.modifyEmployeeName(6, "Imtiaz");
     }
 }
