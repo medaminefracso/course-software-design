@@ -51,6 +51,16 @@ public class User {
             return this; // return an instance of Builder
         }
 
+        public Builder phoneNumber(int phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        public Builder address(String address) {
+            this.address = address;
+            return this;
+        }
+
         public User build() {
             return new User(this);
         }
