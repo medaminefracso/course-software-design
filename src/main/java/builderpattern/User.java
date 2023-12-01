@@ -9,52 +9,8 @@ public class User {
     private int phoneNumber; // Optional
     private String address; // Optional
 
-    public String getUserName() {
-        return userName;
-    }
+    private User(Builder builder) {
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getEmailAddress() {
-        return emailAddress;
-    }
-
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public User(String username, String emailAddress) {
@@ -74,5 +30,34 @@ public class User {
         return "User [userName=" + userName + ", emailAddress=" + emailAddress
                 + ", firstName=" + firstName + ", lastName=" + lastName
                 + ", phoneNumber=" + phoneNumber + ", address=" + address + "]";
+    }
+
+    public static class Builder {
+
+        private String userName; // Required
+        private String emailAddress; // Required
+        private String firstName; // Optional
+        private String lastName;  // Optional
+        private int phoneNumber; // Optional
+        private String address; // Optional
+
+        public Builder(String userName, String email) {
+            this.userName = userName;
+            this.emailAddress = email;
+        }
+
+        public Builder firstName(String value) {
+            this.firstName = value;
+            return this; // return an instance of Builder
+        }
+
+        public Builder lastName(String value) {
+            this.lastName = value;
+            return this; // return an instance of Builder
+        }
+
+        public User build() {
+            return new User(this);
+        }
     }
 }
