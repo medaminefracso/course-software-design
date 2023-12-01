@@ -10,6 +10,12 @@ public class User {
     private String address; // Optional
 
     private User(Builder builder) {
+        this.userName = builder.userName;
+        this.emailAddress = builder.emailAddress;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.phoneNumber = builder.phoneNumber;
+        this.address = builder.address;
     }
 
     @Override
@@ -25,7 +31,9 @@ public class User {
         private String emailAddress; // Required
         private String firstName; // Optional
         private String lastName;  // Optional
+
         private int phoneNumber; // Optional
+
         private String address; // Optional
 
         public Builder(String userName, String email) {

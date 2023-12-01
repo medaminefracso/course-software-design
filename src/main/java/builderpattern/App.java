@@ -7,5 +7,7 @@ public class App {
                 .firstName("bob")
                 .lastName("max")
                 .build();
+
+        System.out.println(websiteUser);
     }
 }
