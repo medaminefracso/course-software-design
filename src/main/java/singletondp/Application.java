@@ -5,10 +5,11 @@ public class Application {
     public static void main(String[] args) {
         PerformanceStage stage = PerformanceStage.getInstance();
 
-        stage.turnOnLights();
-        System.out.println(stage.getCounter());
+        PerformanceStage stage2 = new PerformanceStage();
+        PerformanceStage stage3 = new PerformanceStage();
+        PerformanceStage stage4 = new PerformanceStage();
+        PerformanceStage stage5 = new PerformanceStage();
 
-        PerformanceStage stage2 = PerformanceStage.getInstance();
-        System.out.println(stage2.getCounter());
+        System.out.println(stage3.getCounter());
     }
 }

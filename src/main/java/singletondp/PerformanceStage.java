@@ -6,7 +6,7 @@ public class PerformanceStage {
     private static int counter;
 
     // private constructor for singleton
-    private PerformanceStage() {
+    public PerformanceStage() {
         counter++;
     }
 
