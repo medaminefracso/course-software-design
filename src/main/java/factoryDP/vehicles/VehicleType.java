@@ -1,19 +1,21 @@
 package factoryDP.vehicles;
 
 public enum VehicleType {
-    TRUCK,
-    CAR,
-    ELECTRIC;
-
-    public Vehicle getVehicle() {
-        switch(this) {
-            case TRUCK:
-                return new Truck();
-            case CAR:
-                return new Car();
-            case ELECTRIC:
-                return new ElectricCar();
+    TRUCK {
+        public Vehicle getVehicle() {
+            return new Truck();
         }
-        return null;
-    }
+    },
+    CAR {
+        public Vehicle getVehicle() {
+            return new Car();
+        }
+    },
+    ELECTRIC {
+        public Vehicle getVehicle() {
+            return new ElectricCar();
+        }
+    };
+
+    public abstract Vehicle getVehicle();
 }
